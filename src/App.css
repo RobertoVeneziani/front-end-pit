@@ -1,0 +1,89 @@
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd; /* Cor da borda suavizada */
+  border-radius: 10px;
+  background-color: #ffffff; /* Fundo branco puro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Cor mais escura para o título */
+  font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Deixa os campos em coluna */
+  gap: 10px; /* Espaçamento entre label e input */
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555; /* Cor suave para o label */
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Cor da borda */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff; /* Cor da borda ao focar */
+}
+
+.form-group .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Azul padrão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group .btn:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+.form-group .btn + .btn {
+  margin-left: 10px; /* Espaçamento entre botões */
+}
+
+.is-valid {
+  border-color: green !important;
+}
+
+@media (min-width: 768px) {
+  .form-group {
+      flex-direction: row; /* Alinha os campos lado a lado em telas maiores */
+      align-items: center;
+  }
+
+  .form-group label {
+      width: 30%; /* Ajusta a largura do label */
+      text-align: right;
+      padding-right: 15px; /* Espaçamento entre label e campo */
+  }
+
+  .form-group input,
+  .form-group select {
+      width: 70%; /* Ajusta a largura dos inputs */
+  }
+}

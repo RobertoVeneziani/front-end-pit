@@ -1,0 +1,96 @@
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Aumenta o espaçamento entre os campos */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #007bff;
+  }
+  
+  .form-check-inline {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Adiciona espaço entre as checkboxes */
+  }
+  
+  .form-check-input {
+    margin-right: 5px;
+  }
+  
+  .form-group .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-group .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 768px) {
+    .form-group {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .form-group label {
+      width: 30%;
+      text-align: right;
+      padding-right: 15px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      width: 70%;
+    }
+  
+    .form-check-inline {
+      margin-bottom: 0; /* Remove o espaço inferior nas telas maiores */
+    }
+  }
+  
